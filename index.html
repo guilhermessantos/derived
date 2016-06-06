@@ -2,17 +2,56 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="style.css">
 	<title>Derived</title>
 </head>
 <body>
 
-	<div class="derived-wrapper">
-		<input class="derived-field" type="text">
-		<button class="derived-button">Resolver</button>
-		<div class="derived-info">
-			<div class="derived-info-result"></div>
+	<div id="wrapper">
+
+		<div class="cal-header">
+			<input class="cal-header-value" type="text" placeholder="0">
+		</div>
+
+		<div class="cal-container">
+			<table>
+				<tr>
+					<td colspan="2"><button data-del="">C</button></td>
+					<td colspan="2"><button data-del-one="<"><</button></td>
+				</tr>
+				<tr>
+					<td><button value="7">7</button></td>
+					<td><button value="8">8</button></td>
+					<td><button value="9">9</button></td>
+					<td><button class="sign" value="+">+</button></td>
+				</tr>
+				<tr>
+					<td><button value="4">4</button></td>
+					<td><button value="5">5</button></td>
+					<td><button value="6">6</button></td>
+					<td><button class="sign" value="-">-</button></td>
+				</tr>
+				<tr>
+					<td><button value="1">1</button></td>
+					<td><button value="2">2</button></td>
+					<td><button value="3">3</button></td>
+					<td><button class="sign" value="^">^</button></td>
+				</tr>
+				<tr>
+					<td colspan="2"><button value="0">0</button></td>
+					<td><button value="x">x</button></td>
+					<td><button class="sign" data-result="=">=</button></td>
+				</tr>
+			</table>
+		</div>
+
+		<div class="cal-footer">
+
 		</div>
 	</div>
 
+	<script type="text/javascript" src="assets/javascript/jquery.js"></script>
+	<script type="text/javascript" src="assets/javascript/scripts.js"></script>
 </body>
 </html>
