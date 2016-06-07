@@ -16,7 +16,7 @@ function getFuncList(func) {
   	return func.replace( /[-+]?\d+x/g, ' $&' ).trim().split( /\s/ );
 }
 
-$( 'button' ).on( 'click', function() {
+$( 'button' ).tap( function() {
 	var button 		= $( this ).val()
 	  , lastResult 	= input.val()
 	  , result 		= input.val( lastResult + button )
