@@ -61,6 +61,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 
 body {
+	color: #fff;
+	font-family: arial;
 	background: rgba(0,145,255,1);
 	background: -moz-linear-gradient(-45deg, rgba(0,145,255,1) 0%, rgba(166,39,230,1) 51%, rgba(166,39,230,1) 100%);
 	background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(0,145,255,1)), color-stop(51%, rgba(166,39,230,1)), color-stop(100%, rgba(166,39,230,1)));
@@ -82,7 +84,7 @@ table td {
 }
 
 table {
-	height: 70vh;
+	height: 75vh;
 }
 
 table,
@@ -113,7 +115,7 @@ input {
 	border: none;
 	color: #fff;
 	font-size: 30px;
-	height: 20vh;
+	height: 25vh;
 	padding: 0 10px;
 	text-align: right;
 }
@@ -123,10 +125,16 @@ input {
 	font-size: 25px;
 }
 
-.cal-footer {
-	background: #7d1aaf;
-	height: 10vh;
-	margin: 0 -2px;
+
+.last-result {
+	position: absolute;
+	right: 10px;
+	top: 15px;
+	opacity: .5;
+}
+
+.cal-header {
+	position: relative;
 }
 
 ::-webkit-input-placeholder {

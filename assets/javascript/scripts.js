@@ -30,8 +30,12 @@ $( 'button' ).on( 'click', function() {
 		});
 
 		input.val( funcList.join('') );
+
+		$( '.last-result' ).html( lastResult );
+
 	} else if ( $( this ).data( 'del' ) == '' ) {
 		input.val('');
+		$( '.last-result' ).html( '' );
 	} else if ( $( this ).data( 'del-one' ) == '<' ) {
 		var slice = input.val().slice(0,-1);
 		input.val( slice );
