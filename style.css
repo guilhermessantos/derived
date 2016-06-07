@@ -60,6 +60,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 
+body,
+html,
+#wrapper {
+	height: 100%;
+}
+
+
 body {
 	color: #fff;
 	font-family: arial;
@@ -84,7 +91,11 @@ table td {
 }
 
 table {
-	height: 75vh;
+	height: 100%;
+}
+
+.cal-container {
+	height: 75%;
 }
 
 table,
@@ -115,9 +126,13 @@ input {
 	border: none;
 	color: #fff;
 	font-size: 30px;
-	height: 25vh;
+	height: 100%;
 	padding: 0 10px;
 	text-align: right;
+}
+
+.cal-header {
+	height: 25%;
 }
 
 .sign {
